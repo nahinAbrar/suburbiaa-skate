@@ -5,6 +5,7 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 type HomepageDocumentDataSlicesSlice =
+  | TeamGridSlice
   | VideoBlockSlice
   | TextAndImageSlice
   | ProductionGridSlice
@@ -374,6 +375,51 @@ export type ProductionGridSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *TeamGrid → Default → Primary*
+ */
+export interface TeamGridSliceDefaultPrimary {
+  /**
+   * Heading field in *TeamGrid → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: team_grid.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+}
+
+/**
+ * Default variation for TeamGrid Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TeamGridSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<TeamGridSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *TeamGrid*
+ */
+type TeamGridSliceVariation = TeamGridSliceDefault;
+
+/**
+ * TeamGrid Shared Slice
+ *
+ * - **API ID**: `team_grid`
+ * - **Description**: TeamGrid
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TeamGridSlice = prismic.SharedSlice<
+  "team_grid",
+  TeamGridSliceVariation
+>;
+
+/**
  * Primary content in *TextAndImage → Default → Primary*
  */
 export interface TextAndImageSliceDefaultPrimary {
@@ -632,6 +678,10 @@ declare module "@prismicio/client" {
       ProductionGridSliceDefaultPrimary,
       ProductionGridSliceVariation,
       ProductionGridSliceDefault,
+      TeamGridSlice,
+      TeamGridSliceDefaultPrimary,
+      TeamGridSliceVariation,
+      TeamGridSliceDefault,
       TextAndImageSlice,
       TextAndImageSliceDefaultPrimary,
       TextAndImageSliceImageOnLeftPrimary,
