@@ -6,6 +6,11 @@ import { Heading } from "@/components/Heading";
 import { ButtonLink } from "@/components/ButtonLink";
 import { WideLogo } from "./WideLogo";
 import { TallLogo } from "./TallLogo";
+import { InteractiveSkateboard } from "./InteractiveSkateboard";
+
+
+
+
 
 /**
  * Props for `Hero`.
@@ -37,22 +42,25 @@ const Hero: FC<HeroProps> = ({ slice }) => {
 
         <div className="flex flex-col w-full relative items-center justify-between ~gap-2/4 lg:flex-row">
 
-        
-        <div className="max-w-[45ch] font-semibold ~text-lg/xl">
 
-          <PrismicRichText field={slice.primary.body} />
-        </div>
+          <div className="max-w-[45ch] font-semibold ~text-lg/xl">
 
-        <ButtonLink field={slice.primary.button} icon="skateboard" size="lg" className="z-20 mt-2 block">  
-          {slice.primary.button.text}
-        </ButtonLink>
+            <PrismicRichText field={slice.primary.body} />
+          </div>
 
-          
+          <ButtonLink field={slice.primary.button} icon="skateboard" size="lg" className="z-20 mt-2 block">
+            {slice.primary.button.text}
+          </ButtonLink>
+
+
         </div>
 
       </div>
 
       {/* Skateboard abs positioned */}
+      <InteractiveSkateboard>
+
+      </InteractiveSkateboard>
     </Bounded>
   );
 };
