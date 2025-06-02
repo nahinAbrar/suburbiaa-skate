@@ -18,6 +18,7 @@ type SkateboardProps = {
     truckColor: string
     boltColor: string
     constantWheelSpin?: boolean
+    pose?: "upright" | "side"
 }
 
 
@@ -34,10 +35,10 @@ type GLTFResult = GLTF & {
         Truck1: THREE.Mesh
         Truck2: THREE.Mesh
     }
-    materials: {}
+    materials: object
 }
 
-export function Skateboard({ wheelTextureURLs, wheelTextureURL, deckTextureURLs, deckTextureURL, truckColor, boltColor, constantWheelSpin = false, }: SkateboardProps) {
+export function Skateboard({ wheelTextureURLs, wheelTextureURL, deckTextureURLs, deckTextureURL, truckColor, boltColor, constantWheelSpin = false, pose = "upright" }: SkateboardProps) {
 
     const wheelRefs = useRef<THREE.Object3D[]>([])
 
@@ -159,18 +160,38 @@ export function Skateboard({ wheelTextureURLs, wheelTextureURL, deckTextureURLs,
         if (!wheelRefs.current || constantWheelSpin) return;
 
         for (const wheel of wheelRefs.current) {
-           // gsap rotation
-           gsap.to(wheel.rotation, {
-               x: "+=30",
-               duration: 2.5,
-               ease: 'circ.out',
-           })
+            // gsap rotation
+            gsap.to(wheel.rotation, {
+                x: "+=30",
+                duration: 2.5,
+                ease: 'circ.out',
+            })
         }
     }, [constantWheelSpin, wheelTextureURL])
 
 
+    const positions = useMemo(
+        () =>
+            ({
+                upright: {
+                    rotation: [0, 0, 0],
+                    position: [0, 0, 0],
+                },
+                side: {
+                    rotation: [0, 0, Math.PI / 2],
+                    position: [0, 0.295, 0],
+                },
+            }) as const,
+        []
+    );
+
+
     return (
-        <group dispose={null}>
+        <group
+            dispose={null}
+            rotation={positions[pose].rotation}
+            position={positions[pose].position}
+        >
             <group name="Scene">
                 <mesh
                     name="GripTape"
