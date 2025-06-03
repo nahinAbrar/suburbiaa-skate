@@ -10,29 +10,29 @@ Table of Contents
 
 *   [Overview](#overview)
     
-*   [Features](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#features)
+*   [Features](#features)
     
-*   [Tech Stack](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#tech-stack)
+*   [Tech Stack](#tech-stack)
     
-*   [Getting Started](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#getting-started)
+*   [Getting Started](#getting-started)
     
-    *   [Prerequisites](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#prerequisites)
+    *   [Prerequisites](#prerequisites)
         
-    *   [Installation](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#installation)
+    *   [Installation](#installation)
         
-    *   [Available Scripts](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#available-scripts)
+    *   [Available Scripts](#available-scripts)
         
-*   [Directory Structure](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#directory-structure)
+*   [Directory Structure](#directory-structure)
     
-*   [Customization & Usage](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#customization--usage)
+*   [Customization & Usage](#customization--usage)
     
-*   [Deployment](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#deployment)
+*   [Deployment](#deployment)
     
-*   [Contributing](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#contributing)
+*   [Contributing](#contributing)
     
-*   [License](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#license)
+*   [License](#license)
     
-*   [Contact](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#contact)
+*   [Contact](5#contact)
     
 
 Overview
@@ -159,7 +159,14 @@ Getting Started
 
 Once your environment is set up, you can run:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   # Start the development server with Turbopack  npm run dev  # Build for production (output in .next/)  npm run build  # Start the production server (after build)  npm run start  # Run ESLint to lint files  npm run lint  # Launch Slice Machine UI for editing/creating slices  npm run slicemachine   `
+# Start the development server with Turbopack  
+npm run dev  
+# Build for production (output in .next/)  
+npm run build  
+# Start the production server (after build)  
+npm run start  
+# Run ESLint to lint files  npm run lint  
+# Launch Slice Machine UI for editing/creating slices  npm run slicemachine   `
 
 Customization & Usage
 ---------------------
@@ -257,7 +264,7 @@ Contributions are welcome! If you’d like to:
 License
 -------
 
-This project is licensed under the **MIT License**. See the [LICENSE](https://chatgpt.com/c/LICENSE) file for details.
+This project is licensed under the **MIT License**.
 
 Contact
 -------
