@@ -159,14 +159,16 @@ Getting Started
 
 Once your environment is set up, you can run:
 
-# Start the development server with Turbopack  
+### Start the development server with Turbopack  
 npm run dev  
-# Build for production (output in .next/)  
+### Build for production (output in .next/)  
 npm run build  
-# Start the production server (after build)  
+### Start the production server (after build)  
 npm run start  
-# Run ESLint to lint files  npm run lint  
-# Launch Slice Machine UI for editing/creating slices  npm run slicemachine   `
+### Run ESLint to lint files  
+npm run lint  
+### Launch Slice Machine UI for editing/creating slices  
+npm run slicemachine
 
 Customization & Usage
 ---------------------
