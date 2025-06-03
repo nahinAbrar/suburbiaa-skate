@@ -8,7 +8,7 @@ Live Link
 Table of Contents
 -----------------
 
-*   [Overview](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#overview)
+*   [Overview](#overview)
     
 *   [Features](https://chatgpt.com/c/683ecbf9-47a0-800f-8243-83d66f8c2d25#features)
     
