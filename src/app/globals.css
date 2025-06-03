@@ -95,3 +95,18 @@
     transform: translateX(0);
   }
 }
+
+.lenis {
+  scroll-behavior: auto !important;
+}
+
+.lenis-smooth {
+  overflow: hidden;
+}
+.lenis-stopped {
+  overflow: hidden;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}

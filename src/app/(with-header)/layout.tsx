@@ -1,5 +1,6 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { SmoothScrollProvider } from '@/components/SmoothScrollProvider';
 
 
 type Props = {
@@ -9,9 +10,12 @@ type Props = {
 export default function Layout({ children }: Props) {
     return (
         <>
-            <Header />
-            {children}
-            <Footer />
+            <SmoothScrollProvider>
+
+                <Header />
+                {children}
+                <Footer />
+            </SmoothScrollProvider>
         </>
     )
 }
