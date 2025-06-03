@@ -11,6 +11,7 @@ import { ButtonLink } from "@/components/ButtonLink";
 import { Heading } from "@/components/Heading";
 import { SlideIn } from "@/components/SlideIn";
 import { ParallaxImage } from "./ParallaxImage";
+import { JSX } from "react";
 
 declare module "react" {
   interface CSSProperties {
@@ -74,7 +75,7 @@ const TextAndImage = ({ slice, index }: TextAndImageProps): JSX.Element => {
         />
       </div>
 
-      
+      <div></div>
     </Bounded>
   );
 };

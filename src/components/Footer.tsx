@@ -36,6 +36,8 @@ export async function Footer() {
             </li>
           ))}
         </ul>
+
+        <ul></ul>
       </Bounded>
 
 
