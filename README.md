@@ -1,4 +1,4 @@
-**Suburbia Skate**_A modern, interactive skateboarding storefront built with Next.js, Prismic CMS, and cutting-edge web technologies._
+**Suburbia Skate** A modern, interactive skateboarding storefront built with Next.js, Prismic CMS, and cutting-edge web technologies._
 
 Live Link
 ---------
